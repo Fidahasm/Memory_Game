@@ -12,26 +12,14 @@
     <div id="start-container">
         <label for="">Chooes the Grid</label>
         <div id="grid-button">
-            <button class="gbutton" id="4x4" >4x4</button>
-            <button class="gbutton" id="6x6" >6x6</button>
+            <button class="gbutton" id="4x4" onclick="ChooseGrid(4)" >4x4</button>
+            <button class="gbutton" id="6x6" onclick="ChooseGrid(6)">6x6</button>
         </div>
-        <button id="start-btn">Start</button>
+        <button id="start-btn" onclick="StartGame()">Start</button>
     </div>
 
-
-
-
-
-
-    <div id="tile-container">
-        <div class="tiles"></div>
-        <div class="tiles"></div>
-        <div class="tiles"></div>
-        <div class="tiles"></div>
-        <div class="tiles"></div>
-        <div class="tiles"></div>
-        <div class="tiles"></div>
-        <div class="tiles"></div>
+    <div id="main-container">
+        <div id="tile_container"></div>
     </div>
     
 </body>
