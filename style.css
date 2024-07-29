@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(0,17,34);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#tile-container{
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+}
+.tiles{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+}
+#start-container{
+   
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    /* background-color: aqua; */
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.gbutton{
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+}
+
+#grid-button{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 80px; */
+    padding: 20px;
+}
+#start-btn{
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+    
+
+}
