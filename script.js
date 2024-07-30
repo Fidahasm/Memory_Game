@@ -108,10 +108,13 @@ function buildTile(color,count){
    
     
     element.addEventListener('click',() =>{
-        
-        moves+=0.5;   
-        document.getElementById('moves').innerHTML = Math.floor(moves);
-        if (awaitingEndOfMove || element==activeTile||element.getAttribute('revealed-data') == "true"){
+        if(element.getAttribute('revealed-data') !="true"  && element!=activeTile){
+            moves+=1;
+            if(moves%2==0){
+                document.getElementById('moves').innerHTML = moves/2;
+            }
+        }
+        if (awaitingEndOfMove || element == activeTile||element.getAttribute('revealed-data') == "true"){
             return;
         }
         element.style.backgroundColor = color;
@@ -121,13 +124,15 @@ function buildTile(color,count){
         }
         const activeTileColor = activeTile.getAttribute('data-color')
 
-        if( activeTileColor === color){
+        if( activeTileColor === color)
+            {
             activeTile.setAttribute('revealed-data',"true");
             element.setAttribute('revealed-data',"true");
             awaitingEndOfMove = false;
             activeTile = null;
             revealCount+=2;
-            if(revealCount===count){
+            if(revealCount === count)
+            {
                 alert("You won! Refresh and Play again.");
             }
             return;

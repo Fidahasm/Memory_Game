@@ -72,5 +72,12 @@ h1{
     border: 2px solid grey;
 }
 h2{
-    display: inline;
+    padding: 2px;
+}
+#mov-div{
+    display: flex;
+    /* background-color: aqua; */
+   
+    justify-content: center;
+    /* align-items: center; */
 }
