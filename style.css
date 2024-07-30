@@ -12,14 +12,12 @@ h1{
     margin-top: 70px;
 }
 #tile-container{
-    /* width: 500px;
-    height: 500px; */
+   
     display:grid;
-    /* grid-template-columns: repeat(4,100px);
-    grid-template-rows: repeat(4,100px); */
     gap: 10px;
-    /* background-color: bisque; */
     margin: 20px;
+    box-shadow: 0px 0px 30px black;
+
    
 }
 
@@ -85,7 +83,7 @@ h1{
     border: 2px solid grey;
 }
 h2{
-    margin-top: ;
+    
     padding: 2px;
 }
 #mov-div{
