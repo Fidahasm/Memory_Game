@@ -14,7 +14,7 @@ h1{
 #tile-container{
    
     display:grid;
-    gap: 10px;
+    gap: 12px;
     margin: 20px;
     box-shadow: 0px 0px 30px black;
 
