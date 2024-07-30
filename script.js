@@ -144,7 +144,7 @@ function buildTile(color,count){
             activeTile.style.backgroundColor =  null;
             activeTile = null;
             awaitingEndOfMove = false;
-        },1000);
+        },800);
         
 
     });
