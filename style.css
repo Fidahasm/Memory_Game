@@ -14,13 +14,12 @@ body{
     /* grid-template-columns: repeat(4,100px);
     grid-template-rows: repeat(4,100px); */
     gap: 10px;
-    background-color: bisque;
+    /* background-color: bisque; */
+    margin: 20px;
+   
 }
-.tiles{
-    width: 100px;
-    height: 100px;
-    background-color: aliceblue;
-}
+
+
 #start-container{
    
     width: 400px;
@@ -62,11 +61,16 @@ h1{
     /* width: 500px;
     height: 500px; */
     /* background-color: rgb(27, 206, 206); */
+    /* padding: 20px; */
     
 }
 
 .tile{
     width: 100px;
     height: 100px;
-    background-color: brown;
+    background-color: black;
+    border: 2px solid grey;
+}
+h2{
+    display: inline;
 }
